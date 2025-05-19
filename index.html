@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Loja especializada em lanchas e jetskis de alta qualidade">
+    <title>NauticSport - Lanchas e Jetskis</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>NauticSport</h1>
+                <p>Lanchas e Jetskis</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="active"><i class="fas fa-home"></i> Home</a></li>
+                    <li><a href="catalogo.html"><i class="fas fa-ship"></i> Catálogo</a></li>
+                    <li><a href="#sobre"><i class="fas fa-info-circle"></i> Sobre</a></li>
+                    <li><a href="#contato"><i class="fas fa-envelope"></i> Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="banner">
+        <div class="container">
+            <div class="banner-content">
+                <h2>Navegue com estilo e conforto</h2>
+                <p>Descubra nossa linha exclusiva de lanchas e jetskis para suas aventuras nauticas</p>
+                <a href="catalogo.html" class="btn">Ver Catálogo</a>
+            </div>
+        </div>
+    </section>
+
+    <main>
+        <section class="destaques">
+            <div class="container">
+                <h2>Produtos em Destaque</h2>
+                <div id="carrossel" class="carrossel">
+                    <!-- Imagens do carrossel serão carregadas aqui via JavaScript -->
+                </div>
+            </div>
+        </section>
+
+        <section class="produtos-destaque">
+            <div class="container">
+                <h2>Nossos Produtos</h2>
+                <div id="destaques" class="produtos-grid">
+                    <!-- Produtos em destaque serão carregados aqui via JavaScript -->
+                </div>
+                <div class="ver-mais">
+                    <a href="catalogo.html" class="btn">Ver Todos os Produtos</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="sobre" class="sobre">
+            <div class="container">
+                <h2>Sobre a NauticSport</h2>
+                <div class="sobre-content">
+                    <div class="sobre-texto">
+                        <p>A NauticSport é especializada em embarcações de alta qualidade, oferecendo as melhores lanchas e jetskis do mercado. Com mais de 10 anos de experiência, garantimos produtos de excelência e atendimento personalizado.</p>
+                        <p>Nossa missão é proporcionar momentos inesquecíveis de lazer e aventura do mundo nautico para nossos clientes, com segurança e conforto.</p>
+                    </div>
+                    <div class="sobre-imagem">
+                        <img src="images/lancha-esportiva.jpeg" alt="Lancha Esportiva NauticSport">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contato" class="contato">
+            <div class="container">
+                <h2>Entre em Contato</h2>
+                <div class="contato-content">
+                    <div class="contato-info">
+                        <div class="contato-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <p>Av. Dev.Douglas, 1000 - Portifólio</p>
+                        </div>
+                        <div class="contato-item">
+                            <i class="fas fa-phone"></i>
+                            <p>(xx) xxxxx-xxxx</p>
+                        </div>
+                        <div class="contato-item">
+                            <i class="fas fa-envelope"></i>
+                            <p>xxxxxx@xxx.com</p>
+                        </div>
+                    </div>
+                    <form class="contato-form">
+                        <div class="form-group">
+                            <label for="nome">Nome</label>
+                            <input type="text" id="nome" name="nome" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="mensagem">Mensagem</label>
+                            <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn">Enviar Mensagem</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h3>NauticSport</h3>
+                    <p>Navegue com estilo e conforto</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Links Rápidos</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="catalogo.html">Catálogo</a></li>
+                        <li><a href="#sobre">Sobre</a></li>
+                        <li><a href="#contato">Contato</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h4>Redes Sociais</h4>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; Dev.DouglasAugusto - Todos os direitos reservados</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

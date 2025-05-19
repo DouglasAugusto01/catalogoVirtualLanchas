@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Catálogo completo de lanchas e jetskis da NauticSport">
+    <title>Catálogo - NauticSport</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>NauticSport</h1>
+                <p>Lanchas e Jetskis</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                    <li><a href="catalogo.html" class="active"><i class="fas fa-ship"></i> Catálogo</a></li>
+                    <li><a href="index.html#sobre"><i class="fas fa-info-circle"></i> Sobre</a></li>
+                    <li><a href="index.html#contato"><i class="fas fa-envelope"></i> Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="page-header">
+        <div class="container">
+            <h2>Catálogo de Produtos</h2>
+            <p>Conheça nossa linha completa de lanchas e jetskis</p>
+        </div>
+    </section>
+
+    <main>
+        <section class="filtros">
+            <div class="container">
+                <div class="filtros-container">
+                    <h3>Filtrar por:</h3>
+                    <div class="filtro-grupo">
+                        <label for="categoria">Categoria:</label>
+                        <select id="categoria" name="categoria">
+                            <option value="todos">Todos os produtos</option>
+                            <option value="1">Lanchas</option>
+                            <option value="2">Jetskis</option>
+                        </select>
+                    </div>
+                    <div class="filtro-grupo">
+                        <label for="preco">Preço até:</label>
+                        <input type="range" id="preco" name="preco" min="0" max="250000" step="10000" value="250000">
+                        <span id="preco-valor">R$ 250.000</span>
+                    </div>
+                    <div class="filtro-grupo">
+                        <label for="ordenar">Ordenar por:</label>
+                        <select id="ordenar" name="ordenar">
+                            <option value="nome">Nome</option>
+                            <option value="preco-asc">Preço (menor para maior)</option>
+                            <option value="preco-desc">Preço (maior para menor)</option>
+                            <option value="recentes">Mais recentes</option>
+                        </select>
+                    </div>
+                    <button id="aplicar-filtros" class="btn">Aplicar Filtros</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="catalogo">
+            <div class="container">
+                <div id="catalogo" class="produtos-grid">
+                    <!-- Produtos serão carregados aqui via JavaScript -->
+                    <div class="loading">
+                        <i class="fas fa-spinner fa-spin"></i>
+                        <p>Carregando produtos...</p>
+                    </div>
+                </div>
+                <div class="paginacao">
+                    <button id="anterior" class="btn-paginacao" disabled><i class="fas fa-chevron-left"></i> Anterior</button>
+                    <div id="paginas" class="paginas">
+                        <!-- Números de página serão gerados via JavaScript -->
+                    </div>
+                    <button id="proximo" class="btn-paginacao">Próximo <i class="fas fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h3>NauticSport</h3>
+                    <p>Navegue com estilo e conforto</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Links Rápidos</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="catalogo.html">Catálogo</a></li>
+                        <li><a href="index.html#sobre">Sobre</a></li>
+                        <li><a href="index.html#contato">Contato</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h4>Redes Sociais</h4>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; Dev.DouglasAugusto - Todos os direitos reservados</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

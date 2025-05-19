@@ -1,0 +1,130 @@
+[
+  {
+    "id": 1,
+    "categoria_id": 1,
+    "nome": "Lancha Esportiva XR-5000",
+    "descricao": "Lancha esportiva com motor de alta potência, ideal para esportes aquáticos. Design aerodinâmico e acabamento premium para proporcionar uma experiência única de navegação. Equipada com sistema de som de alta qualidade e iluminação LED para passeios noturnos.",
+    "preco": 150000.00,
+    "estoque": 3,
+    "imagem": "lancha-esportiva.jpeg",
+    "destaque": true,
+    "especificacoes": {
+      "comprimento": "7.5m",
+      "motor": "300HP",
+      "capacidade": "8 pessoas",
+      "ano": 2023,
+      "velocidade_maxima": "75 km/h",
+      "combustivel": "Gasolina",
+      "autonomia": "200 km"
+    },
+    "created_at": "2025-01-15T10:30:00Z",
+    "updated_at": "2025-04-10T14:45:00Z"
+  },
+  {
+    "id": 2,
+    "categoria_id": 1,
+    "nome": "Lancha Cabinada LX-3000",
+    "descricao": "Lancha cabinada com conforto e espaço para toda a família. Cabine espaçosa com camas, banheiro e cozinha compacta. Perfeita para passeios de fim de semana e viagens mais longas, oferecendo conforto e segurança em alto mar.",
+    "preco": 220000.00,
+    "estoque": 2,
+    "imagem": "lancha-cabinada.jpeg",
+    "destaque": true,
+    "especificacoes": {
+      "comprimento": "9m",
+      "motor": "250HP",
+      "capacidade": "10 pessoas",
+      "ano": 2023,
+      "cabines": "2",
+      "banheiros": "1",
+      "combustivel": "Diesel",
+      "autonomia": "350 km"
+    },
+    "created_at": "2025-01-20T11:15:00Z",
+    "updated_at": "2025-04-12T09:30:00Z"
+  },
+  {
+    "id": 3,
+    "categoria_id": 1,
+    "nome": "Lancha Fishing Boat FB-200",
+    "descricao": "Lancha especializada para pesca com todos os equipamentos necessários. Inclui suportes para varas, viveiro para iscas, compartimentos refrigerados para armazenar o pescado e sistema de navegação GPS com sonar para localização de cardumes.",
+    "preco": 180000.00,
+    "estoque": 5,
+    "imagem": "lancha-esportiva.jpeg",
+    "destaque": false,
+    "especificacoes": {
+      "comprimento": "6.5m",
+      "motor": "200HP",
+      "capacidade": "6 pessoas",
+      "ano": 2023,
+      "suportes_varas": "8",
+      "viveiro": "100L",
+      "sonar": "Sim",
+      "autonomia": "280 km"
+    },
+    "created_at": "2025-02-05T14:20:00Z",
+    "updated_at": "2025-04-15T16:10:00Z"
+  },
+  {
+    "id": 4,
+    "categoria_id": 2,
+    "nome": "Jetski Wave Runner 2023",
+    "descricao": "Jetski de alta performance para manobras radicais. Motor potente e design aerodinâmico que proporciona agilidade e velocidade. Ideal para entusiastas que buscam adrenalina e diversão nas águas.",
+    "preco": 45000.00,
+    "estoque": 8,
+    "imagem": "jetski-wave.jpeg",
+    "destaque": true,
+    "especificacoes": {
+      "potencia": "180HP",
+      "capacidade": "2 pessoas",
+      "ano": 2023,
+      "velocidade_maxima": "110 km/h",
+      "combustivel": "Gasolina",
+      "autonomia": "120 km",
+      "peso": "320 kg"
+    },
+    "created_at": "2025-02-10T09:45:00Z",
+    "updated_at": "2025-04-18T10:30:00Z"
+  },
+  {
+    "id": 5,
+    "categoria_id": 2,
+    "nome": "Jetski Family GT-100",
+    "descricao": "Jetski espaçoso para passeios em família. Modelo mais estável e confortável, projetado para passeios tranquilos. Assento amplo que acomoda até 3 pessoas com segurança e conforto.",
+    "preco": 55000.00,
+    "estoque": 4,
+    "imagem": "jetski-wave.jpeg",
+    "destaque": true,
+    "especificacoes": {
+      "potencia": "150HP",
+      "capacidade": "3 pessoas",
+      "ano": 2023,
+      "velocidade_maxima": "90 km/h",
+      "combustivel": "Gasolina",
+      "autonomia": "150 km",
+      "peso": "380 kg"
+    },
+    "created_at": "2025-02-15T13:20:00Z",
+    "updated_at": "2025-04-20T15:45:00Z"
+  },
+  {
+    "id": 6,
+    "categoria_id": 2,
+    "nome": "Jetski Extreme X1",
+    "descricao": "O mais potente da categoria, para os amantes de adrenalina. Equipado com motor de última geração e sistema de controle eletrônico avançado. Proporciona aceleração impressionante e estabilidade mesmo em alta velocidade.",
+    "preco": 65000.00,
+    "estoque": 2,
+    "imagem": "jetski-wave.jpeg",
+    "destaque": false,
+    "especificacoes": {
+      "potencia": "300HP",
+      "capacidade": "2 pessoas",
+      "ano": 2023,
+      "velocidade_maxima": "130 km/h",
+      "combustivel": "Gasolina",
+      "autonomia": "100 km",
+      "peso": "310 kg"
+    },
+    "created_at": "2025-03-01T10:10:00Z",
+    "updated_at": "2025-04-22T11:25:00Z"
+  }
+]

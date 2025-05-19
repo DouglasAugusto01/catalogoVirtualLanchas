@@ -1,0 +1,16 @@
+[
+  {
+    "id": 1,
+    "nome": "Lanchas",
+    "descricao": "Lanchas de diversos tamanhos e potências",
+    "created_at": "2025-01-10T08:30:00Z",
+    "updated_at": "2025-01-10T08:30:00Z"
+  },
+  {
+    "id": 2,
+    "nome": "Jetskis",
+    "descricao": "Jetskis para esporte e lazer",
+    "created_at": "2025-01-10T08:35:00Z",
+    "updated_at": "2025-01-10T08:35:00Z"
+  }
+]
