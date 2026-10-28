@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://douglasaugusto01.github.io/catalogoVirtualLanchas/sitemap.xml

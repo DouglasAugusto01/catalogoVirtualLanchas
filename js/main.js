@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', function() {
         return `
             <div class="produto">
                 <div class="produto-img">
-                    <img src="images/${produto.imagem}" alt="${produto.nome}">
+                    <img src="images/${produto.imagem}" alt="${produto.nome}" loading="lazy">
                 </div>
                 <div class="produto-info">
                     <h3>${produto.nome}</h3>
@@ -55,6 +55,9 @@ document.addEventListener('DOMContentLoaded', function() {
                             <a href="produto.html?id=${produto.id}" class="btn">Ver Detalhes</a>
                         </div>
                     `;
+                    carrossel.classList.remove('carrossel-fade');
+                    void carrossel.offsetWidth;
+                    carrossel.classList.add('carrossel-fade');
                     currentIndex = (currentIndex + 1) % produtosDestaque.length;
                 }
                 

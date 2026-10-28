@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', function() {
         return `
             <div class="produto">
                 <div class="produto-img">
-                    <img src="images/${produto.imagem}" alt="${produto.nome}">
+                    <img src="images/${produto.imagem}" alt="${produto.nome}" loading="lazy">
                 </div>
                 <div class="produto-info">
                     <h3>${produto.nome}</h3>
@@ -73,7 +73,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     </div>
                     <div class="produto-acoes">
                         <a href="index.html#contato" class="btn">Solicitar Orçamento</a>
-                        <a href="https://wa.me/551199998888?text=Olá, tenho interesse no produto ${produto.nome}" class="btn btn-whatsapp"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+                        <a href="https://wa.me/${SITE_CONFIG.whatsappNumber}?text=${encodeURIComponent('Olá, tenho interesse no produto ' + produto.nome)}" class="btn btn-whatsapp" target="_blank" rel="noopener"><i class="fab fa-whatsapp" aria-hidden="true"></i> WhatsApp</a>
                     </div>
                 </div>
             `;

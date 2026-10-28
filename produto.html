@@ -4,11 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Detalhes completos do produto selecionado - NauticSport">
+    <meta name="theme-color" content="#0066cc">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Detalhes do Produto - NauticSport">
+    <meta property="og:description" content="Detalhes completos do produto selecionado - NauticSport">
+    <meta property="og:image" content="https://douglasaugusto01.github.io/catalogoVirtualLanchas/images/lancha-esportiva.jpeg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Detalhes do Produto - NauticSport">
+    <meta name="twitter:description" content="Detalhes completos do produto selecionado - NauticSport">
+    <meta name="twitter:image" content="https://douglasaugusto01.github.io/catalogoVirtualLanchas/images/lancha-esportiva.jpeg">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⛵</text></svg>">
     <title>Detalhes do Produto - NauticSport</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
+    <a href="#main-content" class="skip-link">Pular para o conteúdo</a>
     <header>
         <div class="container">
             <div class="logo">
@@ -16,11 +27,14 @@
                 <p>Lanchas e Jetskis</p>
             </div>
             <nav>
-                <ul>
-                    <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
-                    <li><a href="catalogo.html"><i class="fas fa-ship"></i> Catálogo</a></li>
-                    <li><a href="index.html#sobre"><i class="fas fa-info-circle"></i> Sobre</a></li>
-                    <li><a href="index.html#contato"><i class="fas fa-envelope"></i> Contato</a></li>
+                <button id="menu-toggle" class="menu-toggle" aria-label="Abrir menu de navegação" aria-expanded="false" aria-controls="nav-menu">
+                    <span></span><span></span><span></span>
+                </button>
+                <ul id="nav-menu">
+                    <li><a href="index.html"><i class="fas fa-home" aria-hidden="true"></i> Home</a></li>
+                    <li><a href="catalogo.html"><i class="fas fa-ship" aria-hidden="true"></i> Catálogo</a></li>
+                    <li><a href="index.html#sobre"><i class="fas fa-info-circle" aria-hidden="true"></i> Sobre</a></li>
+                    <li><a href="index.html#contato"><i class="fas fa-envelope" aria-hidden="true"></i> Contato</a></li>
                 </ul>
             </nav>
         </div>
@@ -37,7 +51,7 @@
         </div>
     </section>
 
-    <main>
+    <main id="main-content">
         <section class="produto-detalhes">
             <div class="container">
                 <div id="detalhes-produto" class="detalhes-container">
@@ -73,9 +87,9 @@
                 <h3>Interessado neste produto?</h3>
                 <p>Entre em contato conosco para mais informações ou para agendar um test-drive.</p>
                 <div class="contato-opcoes">
-                    <a href="tel:+55xxxxxxxxxx" class="btn"><i class="fas fa-phone"></i> Ligar Agora</a>
-                    <a href="https://wa.me/xxxxx-xxxx" class="btn btn-whatsapp"><i class="fab fa-whatsapp"></i> WhatsApp</a>
-                    <a href="index.html#contato" class="btn btn-outline"><i class="fas fa-envelope"></i> Formulário de Contato</a>
+                    <a href="#" data-tel class="btn"><i class="fas fa-phone" aria-hidden="true"></i> Ligar Agora</a>
+                    <a href="#" data-whatsapp="Olá! Tenho interesse em um produto da NauticSport." class="btn btn-whatsapp"><i class="fab fa-whatsapp" aria-hidden="true"></i> WhatsApp</a>
+                    <a href="index.html#contato" class="btn btn-outline"><i class="fas fa-envelope" aria-hidden="true"></i> Formulário de Contato</a>
                 </div>
             </div>
         </section>
@@ -100,10 +114,10 @@
                 <div class="footer-social">
                     <h4>Redes Sociais</h4>
                     <div class="social-icons">
-                        <a href="#"><i class="fab fa-facebook"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-youtube"></i></a>
-                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook" aria-hidden="true"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube" aria-hidden="true"></i></a>
+                        <a href="#" data-whatsapp="Olá! Gostaria de mais informações." aria-label="WhatsApp"><i class="fab fa-whatsapp" aria-hidden="true"></i></a>
                     </div>
                 </div>
             </div>
@@ -113,6 +127,7 @@
         </div>
     </footer>
 
+    <script src="js/common.js"></script>
     <script src="js/produto.js"></script>
 </body>
 </html>
